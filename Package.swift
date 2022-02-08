@@ -17,8 +17,8 @@ let package = Package(
     targets: [
         .target(
             name: "MRCRWidget",
-            path: "Sources",
-            dependencies: []),
+            dependencies: [],
+            path: "Sources"),
     ],
     swiftLanguageVersions: [.v5]
 )
