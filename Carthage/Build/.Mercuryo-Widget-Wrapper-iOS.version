@@ -1,0 +1,28 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "b594c671fa37a7fa99bb6f57d3f26a395a3a84b3",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "d9cfa9780abb73af5d94ea8441a592576f5fe456ab8280ec925395ba00e30030",
+      "name" : "MRCRWidget",
+      "container" : "MRCRWidget.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "8c71303898ee5eb138b3b23e3fc5cbdaff8c3d000e78077f3b4f888c4eb75cd1",
+      "name" : "MRCRWidget",
+      "container" : "MRCRWidget.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    }
+  ]
+}

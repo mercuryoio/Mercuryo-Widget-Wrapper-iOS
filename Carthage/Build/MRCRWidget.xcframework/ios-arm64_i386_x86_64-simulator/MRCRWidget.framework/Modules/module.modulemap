@@ -1,0 +1,11 @@
+framework module MRCRWidget {
+  umbrella header "MRCRWidget.h"
+
+  export *
+  module * { export * }
+}
+
+module MRCRWidget.Swift {
+    header "MRCRWidget-Swift.h"
+    requires objc
+}

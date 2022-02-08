@@ -30,6 +30,14 @@ https://mercuryo.io/widget/
 pod 'MRCRWidget'
 ```
 
+### Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate Mercuryo Widget into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "mercuryoio/Mercuryo-Widget-Wrapper-iOS" ~> 1.0
+```
+
 ### Swift Package Manager
 
 The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. It is in early development, but Mercuryo Widget does support its use on supported platforms.
