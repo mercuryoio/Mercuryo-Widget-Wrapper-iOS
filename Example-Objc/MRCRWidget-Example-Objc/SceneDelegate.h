@@ -1,0 +1,15 @@
+//
+//  SceneDelegate.h
+//  MRCRWidget-Example-Objc
+//
+//  Created by Roman Mogutnov on 08.02.2022.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+
+@property (strong, nonatomic) UIWindow * window;
+
+@end
+
