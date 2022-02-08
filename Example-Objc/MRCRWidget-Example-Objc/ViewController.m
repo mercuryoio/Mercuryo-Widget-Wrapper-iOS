@@ -1,8 +1,5 @@
 //
-//  ViewController.m
-//  MRCRWidget-Example-Objc
-//
-//  Created by Roman Mogutnov on 08.02.2022.
+//  Copyright (c) 2022-present MoneySwap OU (mercuryo.io). All rights reserved.
 //
 
 #import "ViewController.h"

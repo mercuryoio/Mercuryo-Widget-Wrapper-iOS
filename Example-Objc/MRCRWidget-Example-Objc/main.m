@@ -1,8 +1,5 @@
 //
-//  main.m
-//  MRCRWidget-Example-Objc
-//
-//  Created by Roman Mogutnov on 08.02.2022.
+//  Copyright (c) 2022-present MoneySwap OU (mercuryo.io). All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -11,7 +8,6 @@
 int main(int argc, char * argv[]) {
     NSString * appDelegateClassName;
     @autoreleasepool {
-        // Setup code that might create autoreleased objects goes here.
         appDelegateClassName = NSStringFromClass([AppDelegate class]);
     }
     return UIApplicationMain(argc, argv, nil, appDelegateClassName);

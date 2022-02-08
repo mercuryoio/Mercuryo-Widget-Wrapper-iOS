@@ -206,9 +206,10 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MRCR;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 1320;
-				ORGANIZATIONNAME = CocoaPods;
+				ORGANIZATIONNAME = "MoneySwap OU (mercuryo.io)";
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;

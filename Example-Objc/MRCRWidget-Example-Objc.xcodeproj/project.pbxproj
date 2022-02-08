@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -129,7 +129,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = MRCR;
 				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = "MoneySwap OU (mercuryo.io)";
 				TargetAttributes = {
 					8F6A230927B28F7D005F8AC3 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -137,7 +139,7 @@
 				};
 			};
 			buildConfigurationList = 8F6A230527B28F7D005F8AC3 /* Build configuration list for PBXProject "MRCRWidget-Example-Objc" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
