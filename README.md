@@ -38,7 +38,7 @@ Once you have your Swift package set up, adding MRCRWidget as a dependency is as
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/mercuryoio/Mercuryo-Widget-Wrapper-iOS.git", .upToNextMajor(from: "0.0.1"))
+    .package(url: "https://github.com/mercuryoio/Mercuryo-Widget-Wrapper-iOS.git", .upToNextMajor(from: "1.0.0"))
 ]
 ```
 
@@ -78,7 +78,7 @@ $ git submodule add https://github.com/mercuryoio/Mercuryo-Widget-Wrapper-iOS.gi
 
 ## Usage
 
-### WidgetConfiguration
+### Widget Configuration
 
 For the first, you should create a configuration for your widget. You can choose one of the standard environment `production` or `sandbox`
 
@@ -134,18 +134,18 @@ self.present(
 
 ### Supporting Widget UI Delegate
 
-You can also support the error handling from Widget. Just implement WidgetUIDelegate.
+You can also support the error handling from Mercuryo Widget. Just implement WidgetUIDelegate.
 
 ```swift
 import MRCRWidget
 
 extension ViewController: WidgetUIDelegate {
-    
+
     func widgetDidReceiveError(_ error: WidgetError) {
         switch error.errorCode {
         case .photoLibraryAuthorizationFailed:
             showAlert()
-            
+
         default:
             break
         }

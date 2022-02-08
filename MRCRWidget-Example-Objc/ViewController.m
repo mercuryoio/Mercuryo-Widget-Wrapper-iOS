@@ -3,7 +3,8 @@
 //
 
 #import "ViewController.h"
-#import <MRCRWidget/MRCRWidget.h>
+
+@import MRCRWidget;
 
 @interface ViewController () <MRCRWidgetUIDelegate>
 

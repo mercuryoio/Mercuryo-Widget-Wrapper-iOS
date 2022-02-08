@@ -7,7 +7,3 @@
 FOUNDATION_EXPORT double MRCRWidgetVersionNumber;
 
 FOUNDATION_EXPORT const unsigned char MRCRWidgetVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <MRCRWidget/PublicHeader.h>
-
-#import <MRCRWidget/MRCRWidget-swift.h>
