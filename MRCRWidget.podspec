@@ -4,8 +4,8 @@
 
 Pod::Spec.new do |s|
   s.name = "MRCRWidget"
-  s.version = "0.0.1"
-  s.summary = "The wrapper for Mercuryo Widget"
+  s.version = "1.0.0"
+  s.summary = "Mercuryo Widget Wrapper is a lightweight library for developers of apps who embed Mercuryo Widget into their mobile UX"
 
   s.homepage = "https://github.com/mercuryoio/Mercuryo-Widget-Wrapper-iOS"
   s.license = { :type => "MIT", :file => "LICENSE.md" }
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "9.0"
   s.swift_versions = ["5.1", "5.2", "5.3"]
 
-  s.source_files = "Sources/Mercuryo-Widget/**/*"
+  s.source_files = "Sources/**/*"
 
   s.frameworks = "UIKit", "Foundation", "SafariServices"
 end

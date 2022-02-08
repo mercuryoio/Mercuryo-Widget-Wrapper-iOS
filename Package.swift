@@ -5,21 +5,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "Mercuryo-Widget",
+    name: "MRCRWidget",
     platforms: [.iOS(.v9)],
     products: [
         .library(
-            name: "Mercuryo-Widget",
-            targets: ["Mercuryo-Widget"]),
+            name: "MRCRWidget",
+            targets: ["MRCRWidget"]),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "Mercuryo-Widget",
+            name: "MRCRWidget",
             dependencies: []),
-        .testTarget(
-            name: "Mercuryo-WidgetTests",
-            dependencies: ["Mercuryo-Widget"]),
     ],
     swiftLanguageVersions: [.v5]
 )
