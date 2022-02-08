@@ -1,0 +1,8 @@
+author: MoneySwap OU (mercuryo.io)
+author_url: https://mercuryo.io/
+github_url: https://github.com/mercuryoio/Mercuryo-Widget-Wrapper-iOS
+root_url: https://mercuryoio.github.io/Mercuryo-Widget-Wrapper-iOS/
+module: MRCRWidget
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-scheme, 'MRCRWidget']
