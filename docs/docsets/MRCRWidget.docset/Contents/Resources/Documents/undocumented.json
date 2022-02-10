@@ -1,0 +1,138 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetAssembly.swift",
+      "line": 9,
+      "symbol": "WidgetAssembly",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetAssembly.swift",
+      "line": 22,
+      "symbol": "WidgetAssembly.init(configuration:uiDelegate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetAssembly.swift",
+      "line": 34,
+      "symbol": "WidgetAssembly.build()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetConfiguration.swift",
+      "line": 9,
+      "symbol": "WidgetConfiguration",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetConfiguration.swift",
+      "line": 20,
+      "symbol": "WidgetConfiguration.init(widgetId:widgetURL:params:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetConfiguration.swift",
+      "line": 64,
+      "symbol": "WidgetConfiguration.init(widgetId:environment:params:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetEnvironment.swift",
+      "line": 9,
+      "symbol": "WidgetEnvironment",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetEnvironment.swift",
+      "line": 11,
+      "symbol": "WidgetEnvironment.sandbox",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetEnvironment.swift",
+      "line": 12,
+      "symbol": "WidgetEnvironment.production",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetError.swift",
+      "line": 9,
+      "symbol": "WidgetError",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetError.swift",
+      "line": 15,
+      "symbol": "WidgetError.errorCode",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetError.swift",
+      "line": 21,
+      "symbol": "WidgetError.init(widgetErrorCode:localizedDescription:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetErrorCode.swift",
+      "line": 9,
+      "symbol": "WidgetErrorCode",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetErrorCode.swift",
+      "line": 11,
+      "symbol": "WidgetErrorCode.invalidCustomURL",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetErrorCode.swift",
+      "line": 12,
+      "symbol": "WidgetErrorCode.initializationFailed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetErrorCode.swift",
+      "line": 13,
+      "symbol": "WidgetErrorCode.photoLibraryAuthorizationFailed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetErrorCode.swift",
+      "line": 20,
+      "symbol": "WidgetErrorCode",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetUIDelegate.swift",
+      "line": 9,
+      "symbol": "WidgetUIDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget/Sources/WidgetUIDelegate.swift",
+      "line": 12,
+      "symbol": "WidgetUIDelegate.widgetDidReceiveError(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/romanmogutnov/Documents/X/Mercuryo/Libraries/Mercuryo-Widget"
+}

@@ -101,7 +101,148 @@
 
 <p>Solely purpose of the library is to provide an easy way to initialize WebView passing correct parameters with all needed permissions.</p>
 
-<p>More info here: <a href="https://mercuryo.io/widget/">https://mercuryo.io/widget/</a> and here <a href="https://help.mercuryo.io/en/articles/4519473-mercuryo-widget-faq">https://help.mercuryo.io/en/articles/4519473-mercuryo-widget-faq</a>.</p>
+<p><a href="https://mercuryo.io/widget/">https://mercuryo.io/widget/</a></p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS 9.0+</li>
+<li>Xcode 11+</li>
+<li>Swift 5.1+</li>
+</ul>
+<h2 id='communication' class='heading'>Communication</h2>
+
+<ul>
+<li>If you need to <strong>find or understand an API</strong>, check <a href="https://mercuryoio.github.io/Mercuryo-Widget-Wrapper-iOS/">our documentation</a>.</li>
+<li>If you need <strong>more information</strong>, check <a href="https://help.mercuryo.io/en/articles/4519473-mercuryo-widget-faq">our help page</a>.</li>
+<li>If you <strong>found a bug</strong>, open an issue. The more detail the better!</li>
+<li>If you <strong>want to contribute</strong>, submit a pull request.</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
+
+<p><a href="https://cocoapods.org">CocoaPods</a> is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Mercuryo Widget into your Xcode project using CocoaPods, specify it in your <code>Podfile</code>:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'MRCRWidget'</span>
+</code></pre>
+<h3 id='carthage' class='heading'>Carthage</h3>
+
+<p><a href="https://github.com/Carthage/Carthage">Carthage</a> is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate Mercuryo Widget into your Xcode project using Carthage, specify it in your <code>Cartfile</code>:</p>
+<pre class="highlight plaintext"><code>github "mercuryoio/Mercuryo-Widget-Wrapper-iOS" ~&gt; 1.0
+</code></pre>
+<h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
+
+<p>The <a href="https://swift.org/package-manager/">Swift Package Manager</a> is a tool for automating the distribution of Swift code and is integrated into the <code>swift</code> compiler. It is in early development, but Mercuryo Widget does support its use on supported platforms.</p>
+
+<p>Once you have your Swift package set up, adding MRCRWidget as a dependency is as easy as adding it to the <code>dependencies</code> value of your <code>Package.swift</code>.</p>
+<pre class="highlight swift"><code><span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/mercuryoio/Mercuryo-Widget-Wrapper-iOS.git"</span><span class="p">,</span> <span class="o">.</span><span class="nf">upToNextMajor</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="s">"1.0.0"</span><span class="p">))</span>
+<span class="p">]</span>
+</code></pre>
+<h3 id='manually' class='heading'>Manually</h3>
+
+<p>If you prefer not to use either of the aforementioned dependency managers, you can integrate Mercuryo Widget into your project manually.</p>
+<h4 id='embedded-framework' class='heading'>Embedded Framework</h4>
+
+<ul>
+<li>Open up Terminal, <code>cd</code> into your top-level project directory, and run the following command &ldquo;if&rdquo; your project is not initialized as a git repository:</li>
+</ul>
+<pre class="highlight shell"><code><span class="nv">$ </span>git init
+</code></pre>
+
+<ul>
+<li>Add Mercuryo Widget as a git <a href="http://git-scm.com/docs/git-submodule">submodule</a> by running the following command:</li>
+</ul>
+<pre class="highlight shell"><code><span class="nv">$ </span>git submodule add https://github.com/mercuryoio/Mercuryo-Widget-Wrapper-iOS.git
+</code></pre>
+
+<ul>
+<li><p>Open the new <code>MRCRWidget</code> folder, and drag the <code>MRCRWidget.xcodeproj</code> into the Project Navigator of your application&rsquo;s Xcode project.</p>
+
+<blockquote>
+<p>It should appear nested underneath your application&rsquo;s blue project icon. Whether it is above or below all the other Xcode groups does not matter.</p>
+</blockquote></li>
+<li><p>Select the <code>MRCRWidget.xcodeproj</code> in the Project Navigator and verify the deployment target matches that of your application target.</p></li>
+<li><p>Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the &ldquo;Targets&rdquo; heading in the sidebar.</p></li>
+<li><p>In the tab bar at the top of that window, open the &ldquo;General&rdquo; panel.</p></li>
+<li><p>Click on the <code>+</code> button under the &ldquo;Embedded Binaries&rdquo; section.</p></li>
+<li><p>You will see <code>MRCRWidget.xcodeproj</code> folder.</p></li>
+<li><p>And that&rsquo;s it!</p></li>
+</ul>
+
+<blockquote>
+<p>The <code>MRCRWidget.framework</code> is automagically added as a target dependency, linked framework and embedded framework in a copy files build phase which is all you need to build on the simulator and a device.</p>
+</blockquote>
+
+<hr>
+<h2 id='usage' class='heading'>Usage</h2>
+<h3 id='widget-configuration' class='heading'>Widget Configuration</h3>
+
+<p>For the first, you should create a configuration for your widget. You can choose one of the standard environment <code>production</code> or <code>sandbox</code></p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">MRCRWidget</span>
+
+<span class="k">do</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">configuration</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">WidgetConfiguration</span><span class="p">(</span>
+        <span class="nv">widgetId</span><span class="p">:</span> <span class="s">"67710925-8b40-4767-846e-3b88db69f04d"</span><span class="p">,</span>
+        <span class="nv">environment</span><span class="p">:</span> <span class="o">.</span><span class="n">production</span><span class="p">,</span>
+        <span class="nv">params</span><span class="p">:</span> <span class="kc">nil</span>
+    <span class="p">)</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="nf">assertionFailure</span><span class="p">(</span><span class="n">error</span><span class="o">.</span><span class="n">localizedDescription</span><span class="p">)</span>
+<span class="p">}</span>
+
+</code></pre>
+
+<p>or use your own widget url</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">MRCRWidget</span>
+
+<span class="k">do</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">configuration</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">WidgetConfiguration</span><span class="p">(</span>
+        <span class="nv">widgetId</span><span class="p">:</span> <span class="s">"67710925-8b40-4767-846e-3b88db69f04d"</span><span class="p">,</span>
+        <span class="nv">widgetURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"https://exchange.mydomain.io"</span><span class="p">),</span>
+        <span class="nv">params</span><span class="p">:</span> <span class="kc">nil</span>
+    <span class="p">)</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="nf">assertionFailure</span><span class="p">(</span><span class="n">error</span><span class="o">.</span><span class="n">localizedDescription</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='presenting-widget' class='heading'>Presenting Widget</h3>
+
+<p>Next, you should create WidgetAssembly and call <code>build</code> method. It returns a ViewController that you can show as you want.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">MRCRWidget</span>
+
+<span class="k">let</span> <span class="nv">vc</span> <span class="o">=</span> <span class="kt">WidgetAssembly</span><span class="p">(</span>
+    <span class="nv">configuration</span><span class="p">:</span> <span class="n">configuration</span><span class="p">,</span>
+    <span class="nv">uiDelegate</span><span class="p">:</span> <span class="k">self</span>
+<span class="p">)</span>
+    <span class="o">.</span><span class="nf">build</span><span class="p">()</span>
+
+<span class="k">self</span><span class="o">.</span><span class="nf">present</span><span class="p">(</span>
+    <span class="n">vc</span><span class="p">,</span>
+    <span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span>
+<span class="p">)</span>
+</code></pre>
+<h3 id='supporting-widget-ui-delegate' class='heading'>Supporting Widget UI Delegate</h3>
+
+<p>You can also support the error handling from Mercuryo Widget. Just implement WidgetUIDelegate.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">MRCRWidget</span>
+
+<span class="kd">extension</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">WidgetUIDelegate</span> <span class="p">{</span>
+
+    <span class="kd">func</span> <span class="nf">widgetDidReceiveError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">WidgetError</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">switch</span> <span class="n">error</span><span class="o">.</span><span class="n">errorCode</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nv">photoLibraryAuthorizationFailed</span><span class="p">:</span>
+            <span class="nf">showAlert</span><span class="p">()</span>
+
+        <span class="k">default</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<hr>
+<h2 id='license' class='heading'>License</h2>
+
+<p>Mercuryo Widget is released under the MIT license. <a href="https://github.com/mercuryoio/Mercuryo-Widget-Wrapper-iOS/blob/master/LICENSE.md">See LICENSE</a> for details.</p>
 
           </div>
         </section>
@@ -110,7 +251,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2022 <a class="link" href="https://mercuryo.io/" target="_blank" rel="external noopener">MoneySwap OU (mercuryo.io)</a>. All rights reserved. (Last updated: 2022-02-09)</p>
+      <p>&copy; 2022 <a class="link" href="https://mercuryo.io/" target="_blank" rel="external noopener">MoneySwap OU (mercuryo.io)</a>. All rights reserved. (Last updated: 2022-02-10)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
