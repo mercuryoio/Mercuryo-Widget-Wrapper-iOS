@@ -1,5 +1,9 @@
 # Mercuryo-Widget
 
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/MRCRWidget.svg)](https://img.shields.io/cocoapods/v/MRCRWidget.svg)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Platform](https://img.shields.io/cocoapods/p/MRCRWidget.svg?style=flat)](http://cocoadocs.org/docsets/MRCRWidget)
+
 Mercuryo Widget Wrapper is a lightweight library for developers of apps who embed Mercuryo Widget into their mobile UX.
 
 Solely purpose of the library is to provide an easy way to initialize WebView passing correct parameters with all needed permissions.
